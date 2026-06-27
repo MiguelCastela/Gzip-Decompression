@@ -1,4 +1,4 @@
-from huffmantree import HuffmanTree
+from huffman_tree import HuffmanTree
 
 
 hft = HuffmanTree()

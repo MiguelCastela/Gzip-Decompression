@@ -2,8 +2,9 @@
 # Adapted from Java's implementation of Rui Pedro Paiva
 # Teoria da Informacao, LEI, 2022
 
+import os
 import sys
-from huffmantree import HuffmanTree
+from huffman_tree import HuffmanTree
 
 
 class GZIPHeader:
@@ -480,10 +481,12 @@ class GZIP:
 
 if __name__ == '__main__':
 
-    # gets filename from command line if provided
-    fileName = "FAQ.txt.gz"
+    # gets filename from command line if provided, otherwise uses the bundled example
     if len(sys.argv) > 1:
-        fileName = sys.argv[1]            
+        fileName = sys.argv[1]
+    else:
+        defaultDir = os.path.join(os.path.dirname(__file__), '..', 'examples')
+        fileName = os.path.join(defaultDir, 'FAQ.txt.gz')
 
     # decompress file
     gz = GZIP(fileName)
