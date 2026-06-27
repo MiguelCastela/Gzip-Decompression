@@ -68,8 +68,3 @@ To exercise the Huffman tree in isolation:
 ```
 python src/test_huffman_tree.py
 ```
-
-## Notes
-
-Only dynamic Huffman blocks (BTYPE 2) are supported. Stored (BTYPE 0) and fixed
-Huffman (BTYPE 1) blocks are not handled.
