@@ -7,6 +7,19 @@ relying on Python's built-in compression libraries.
 This project was developed for the Information Theory course (Teoria da
 Informacao) of the Informatics Engineering degree at the University of Coimbra.
 
+## Assignments in this repository
+
+This repository collects the coursework for the Information Theory course. It
+contains two assignments:
+
+- **Assignment 1: Entropy, Mutual Information and Huffman Coding** lives in
+  [`Assignment1-Entropy,MutualInformation,Huffman/`](Assignment1-Entropy,MutualInformation,Huffman/).
+  It applies information-theoretic measures (entropy, Huffman code length,
+  Pearson correlation and mutual information) to a car dataset and builds a
+  simple MPG predictor. See that folder's README for details.
+- **Assignment 2: GZIP Decompressor** is the project at the root of this
+  repository, documented below.
+
 ## What it does
 
 The tool decompresses files that were compressed with GZIP using DEFLATE with
@@ -22,6 +35,9 @@ dynamic Huffman coding (BTYPE 2). The decompression is implemented step by step:
 
 ## Project structure
 
+The GZIP decompressor (Assignment 2) is laid out as follows. Assignment 1 sits
+in its own sibling folder.
+
 ```
 .
 ├── src/
@@ -34,9 +50,10 @@ dynamic Huffman coding (BTYPE 2). The decompression is implemented step by step:
 │   ├── sample_image.jpeg.gz
 │   ├── sample_large_text.txt.gz
 │   └── decompressed/          Expected decompressed outputs for reference
-└── docs/
-    ├── assignment.pdf         Original assignment statement
-    └── report.pdf             Project report
+├── docs/
+│   ├── assignment.pdf         Original assignment statement
+│   └── report.pdf             Project report
+└── Assignment1-Entropy,MutualInformation,Huffman/   Assignment 1 (see its README)
 ```
 
 ## Requirements

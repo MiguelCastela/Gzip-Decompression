@@ -1,0 +1,8 @@
+pandas
+numpy
+matplotlib
+openpyxl
+
+# huffmancodec is the course-provided module (huffmancodec.py).
+# It is not on PyPI; place huffmancodec.py next to information_metrics.py
+# (in src/) or anywhere on your PYTHONPATH.
