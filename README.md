@@ -85,3 +85,7 @@ To exercise the Huffman tree in isolation:
 ```
 python src/test_huffman_tree.py
 ```
+
+## Authors
+
+- Miguel Castela
